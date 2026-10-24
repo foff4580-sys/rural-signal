@@ -1,0 +1,25 @@
+{
+  "case_id": "official_flash_flood",
+  "passed": true,
+  "errors": [],
+  "elapsed_seconds": 19.26,
+  "model": "Spark-X2.6-4B Q4_K_M",
+  "output": {
+    "incident_type": "FLASH FLOOD WARNING",
+    "location": "County Road 12 at Dry Creek, central Redstone County",
+    "observed_at": "2:15 PM CDT",
+    "valid_until": "4:30 PM CDT",
+    "source_name": "National Weather Service",
+    "source_status": "OFFICIAL",
+    "sms": "OFFICIAL: FLASH FLOOD WARNING for County Road 12 at Dry Creek, central Redstone County until 4:30 PM. Do not drive through flooded roads.",
+    "do_now": [
+      "Do not drive through flooded roads.",
+      "Turn around and use another route.",
+      "Check the National Weather Service for updates."
+    ],
+    "unknowns": [
+      "The notice does not state when County Road 12 will be passable."
+    ],
+    "plain_summary": "OFFICIAL National Weather Service notice: FLASH FLOOD WARNING for County Road 12 at Dry Creek, central Redstone County, valid until 4:30 PM CDT. Do not drive through flooded roads."
+  }
+}

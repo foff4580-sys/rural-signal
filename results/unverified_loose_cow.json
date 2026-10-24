@@ -1,0 +1,26 @@
+{
+  "case_id": "unverified_loose_cow",
+  "passed": true,
+  "errors": [],
+  "elapsed_seconds": 18.72,
+  "model": "Spark-X2.6-4B Q4_K_M",
+  "output": {
+    "incident_type": "LOOSE LIVESTOCK ROAD HAZARD",
+    "location": "Farm Road 214 near Miller Road",
+    "observed_at": "10:50 AM CDT",
+    "valid_until": "UNKNOWN",
+    "source_name": "Community report",
+    "source_status": "UNVERIFIED",
+    "sms": "UNVERIFIED: cow on Farm Road 214 near Miller Road. Slow down, do not approach. Report to local authorities.",
+    "do_now": [
+      "Slow down and avoid the area if possible.",
+      "Do not approach the animal.",
+      "Report the hazard to local authorities."
+    ],
+    "unknowns": [
+      "The report has not been officially confirmed.",
+      "It is unknown whether the animal remains on the road."
+    ],
+    "plain_summary": "UNVERIFIED community report of a cow on Farm Road 214 near Miller Road at 10:50 AM CDT. The report has not been officially confirmed, and it is unknown whether the animal remains on the road."
+  }
+}

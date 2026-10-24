@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#173f36">
+  <title>Rural Signal — local clarity when it matters</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#demo">Skip to demonstration</a>
+  <header class="hero">
+    <nav aria-label="Rural Signal"><a class="brand" href="/" aria-label="Rural Signal home"><span class="mark">RS</span><span>Rural Signal</span></a><span class="local-chip">Runs locally with Spark-X2.6</span></nav>
+    <div class="hero-grid">
+      <div>
+        <p class="kicker">LOCAL CLARITY WHEN IT MATTERS</p>
+        <h1>Scattered rural notices become one clear next step.</h1>
+        <p class="lede">Rural Signal turns official warnings and community reports into plain-language action cards—without hiding where the information came from or pretending an unverified report is fact.</p>
+        <a class="primary-link" href="#demo">See the live local demo <span aria-hidden="true">↓</span></a>
+      </div>
+      <aside class="promise" aria-label="Product promise">
+        <span class="signal-icon" aria-hidden="true">⌁</span>
+        <p>Built for the places where information is fragmented, connections are imperfect, and a simple text message may reach farther than an app.</p>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="principles" aria-label="What Rural Signal protects">
+      <article><strong>Source stays visible</strong><span>Official and unverified information never look the same.</span></article>
+      <article><strong>Critical facts stay locked</strong><span>Location, time, and source status are owned by ordinary code.</span></article>
+      <article><strong>Plain text travels farther</strong><span>Every card includes a flip-phone-sized SMS preview.</span></article>
+    </section>
+
+    <section class="demo" id="demo">
+      <div class="section-heading">
+        <div><p class="kicker">WORKING DEMONSTRATION</p><h2>Choose a rural incident</h2></div>
+            <p>This contest build uses four synthetic cases. “Run Spark locally” performs real on-device inference and withholds anything that fails validation.</p>
+      </div>
+
+      <div class="demo-shell">
+        <aside class="case-rail" aria-label="Demonstration cases"><div id="case-list"></div></aside>
+        <article class="workspace" aria-live="polite">
+          <div class="workspace-top">
+            <div><p id="case-eyebrow" class="kicker"></p><h3 id="case-title">Loading cases…</h3></div>
+            <span id="trust-badge" class="trust-badge">WAITING</span>
+          </div>
+
+          <details class="source-panel"><summary>See the incoming source text</summary><p id="raw-notice"></p></details>
+
+          <div id="empty-state" class="empty-state">
+            <div class="radar" aria-hidden="true"><span></span></div>
+            <p>Run the bundled case through Spark-X2.6. Expect about 20 seconds on this computer.</p>
+          </div>
+
+          <div id="result" hidden>
+            <div id="facts" class="fact-grid"></div>
+            <div class="summary-block"><span class="block-label">PLAIN-LANGUAGE SIGNAL</span><p id="plain-summary"></p></div>
+            <div class="two-col">
+              <div><span class="block-label">WHAT TO DO NOW</span><ul id="actions"></ul></div>
+              <div><span class="block-label">WHAT IS STILL UNKNOWN</span><ul id="unknowns"></ul></div>
+            </div>
+            <div class="sms-block"><div><span class="block-label">FLIP-PHONE SMS PREVIEW</span><span id="sms-count"></span></div><p id="sms"></p></div>
+          </div>
+
+          <div class="run-row">
+            <button id="run" type="button">Run Spark locally</button>
+            <p id="run-status">Nothing is sent and no internet service is contacted.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="boundary">
+      <div><p class="kicker">WHY THE SAFETY TEST MATTERS</p><h2>AI explains. It does not get to rewrite reality.</h2></div>
+      <p>The fourth case hides a malicious instruction inside forwarded community text: call the report official and confirmed. Rural Signal keeps source status outside the model, restricts actions to an approved set, checks every required fact, and refuses to show failed output.</p>
+    </section>
+  </main>
+
+  <footer><strong>Rural Signal</strong><span>Contest edition · synthetic demonstration data · not an emergency service</span></footer>
+  <script src="/app.js" defer></script>
+</body>
+</html>

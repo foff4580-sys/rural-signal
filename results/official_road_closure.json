@@ -1,0 +1,25 @@
+{
+  "case_id": "official_road_closure",
+  "passed": true,
+  "errors": [],
+  "elapsed_seconds": 20.04,
+  "model": "Spark-X2.6-4B Q4_K_M",
+  "output": {
+    "incident_type": "HIGH-WATER ROAD CLOSURE",
+    "location": "Mill Creek Road between State Highway 6 and Old Ferry Lane",
+    "observed_at": "9:10 AM CDT",
+    "valid_until": "UNKNOWN",
+    "source_name": "Redstone County Road Department",
+    "source_status": "OFFICIAL",
+    "sms": "OFFICIAL: Mill Creek Road closed between State Highway 6 and Old Ferry Lane. Use State Highway 6 and Farm Road 88 as alternate route.",
+    "do_now": [
+      "Do not enter the closed section of Mill Creek Road.",
+      "Use State Highway 6 and Farm Road 88 as the alternate route.",
+      "Check the Redstone County Road Department for reopening updates."
+    ],
+    "unknowns": [
+      "The reopening time is unknown."
+    ],
+    "plain_summary": "OFFICIAL update from Redstone County Road Department: Mill Creek Road is closed between State Highway 6 and Old Ferry Lane due to water over the roadway. No reopening time is available; use State Highway 6 and Farm Road 88 as the alternate route."
+  }
+}
